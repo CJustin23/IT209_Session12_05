@@ -86,7 +86,11 @@ Nếu bắt buộc phải dùng `REGISTRY_TOKEN` (ví dụ registry ngoài GHCR)
     tags: ghcr.io/cjustin23/it209_session12_05:latest
 ```
 
-**Kết quả.** Run [#5](https://github.com/CJustin23/IT209_Session12_05/actions/workflows/broken-pipeline.yml): toàn bộ pipeline tích xanh (xem ảnh `images/pipeline-green.png`).
+**Kết quả.** Run [#5](https://github.com/CJustin23/IT209_Session12_05/actions/runs/38463068060) — commit `5a853b2`: **Success 1m 29s**, job `Test and publish image` tích xanh, image được push lên `ghcr.io/cjustin23/it209_session12_05:latest`. Run [#6](https://github.com/CJustin23/IT209_Session12_05/actions) (commit tài liệu này) tiếp tục xanh, chứng tỏ pipeline ổn định chứ không ăn may.
+
+Toàn bộ chuỗi chẩn đoán trên tab Actions — #1 đỏ, #2 đỏ, #3 xanh, #4 đỏ, #5 xanh, #6 xanh:
+
+![Lịch sử run của pipeline](images/pipeline-run-history.png)
 
 ---
 
